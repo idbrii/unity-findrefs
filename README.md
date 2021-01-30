@@ -12,21 +12,21 @@ Find asset references super fast in Unity project. Both on macOS and Windows.
 ## Feature
 
 1. It's super fast on macOS and Windows if using SSD.
-1. Show searching progress, max waiting time is 300s.
-2. Show every reference in Console and you can click message to select object.
-3. Show result in warning and summarize all references.
+1. Shows searching progress with max waiting time of 300s.
+2. Shows every reference in Console and you can click message to select object.
+3. Shows summary of search as a warning.
 
 ## Speed
 
 ### macOS
 
-It only takes less than 2 seconds to complete search, it uses `mdfind` to utilize Spotlight index to speed up searching.
+It takes less than 2 seconds to complete search. Uses `mdfind` to utilize Spotlight index to speed up searching.
 
 ### Windows
 
-It use the fastest `ripgrep` to search text and do a lot of optimization on file size and count.
+It use the fast `ripgrep` to search text and do a lot of optimization on file size and count.
 
-So it would takes about 5 seconds to search ~700M and ~7000 files on SSD.
+Takes about 5 seconds to search ~700M and ~7000 files on SSD.
 
 ## Install
 
@@ -36,7 +36,7 @@ Add this line to your Packages/manifest.json:
 
 ### macOS
 
-Job done! It just uses the `mdfind` built in macOS and has no other dependencies.
+No additional setup necessary! It just uses the `mdfind` built in macOS and has no other dependencies.
 
 ### Windows
 
@@ -53,7 +53,7 @@ rg.exe is now in your PATH and usable by unity-findrefs.
 
 #### Manual
 
-1. Download `ripgrep` from [Latest release · BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep/releases/latest) and extract `rg.exe` to `Tools\FindReferencesInProject2` directory.
+1. Download `ripgrep` from [Latest release · BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep/releases/latest) and extract `rg.exe` to `Tools\FindReferencesInProject2` directory or somewhere in your PATH.
 2. Click `Unlock file` in `rg.exe` Properties, or you will find it takes too long time to start first time.
 
 Note: It seems that `x86_64-pc-windows-msvc` has a smaller size in `ripgrep` release page.
@@ -64,8 +64,9 @@ Note: It seems that `x86_64-pc-windows-msvc` has a smaller size in `ripgrep` rel
 
 - Windows 10
 - macOS 10.13.6 and 10.14
-- Unity 2017.4.2f2 and 2018.2.0f2
-- ripgrep 0.10.0
+- Unity 2017.4.2f2, 2018.2.0f2, 2019.4.18f1
+- ripgrep 12.1.1
+
 
 ## Acknowledgement
 
